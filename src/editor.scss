@@ -1,0 +1,69 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-formo-jobs-list {
+	border: 1px dotted #f00;
+}
+.job {
+  font-size: var(--wp--preset--font-size--body);
+  margin: 0 0 1em 0;
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  order: 1;
+}
+.job-header, 
+.job-content {
+  background-color: var(--wp--preset--color--formo-grey);
+  border-radius: var(--job-border-radius);
+  padding: 0.5em 1.5em;
+  overflow: hidden;
+}
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--job-border-radius);
+  padding: 0.75em 1.5em;
+  overflow: hidden;
+}
+.job-content {
+  display: none;
+  color: var(--wp--preset--color--formo-darktone);
+  gap: 1.5em;
+  flex-direction: row;
+  padding-top: 0;
+  border-radius: 0 0 var(--job-border-radius) var(--job-border-radius);
+}
+.job-header-title, 
+.job-header-title a {
+  font-family: var(--wp--preset--font-family--roobert);
+  font-size: var(--wp--preset--font-size--body);
+  color: var(--wp--preset--color--formo-darktone);
+  letter-spacing: normal;
+  text-transform: none;
+  margin: 0;
+}
+.job-header-title {
+  flex: 60% 0 0;
+}
+.job-header-location {
+  font-family: var(--wp--preset--font-family--roobert);
+  font-size: var(--wp--preset--font-size--small);
+  color: var(--wp--preset--color--formo-darktone);
+  font-style: normal;
+  text-transform: uppercase;
+  flex: calc(40% - 9 * var(--wp--preset--font-size--tiny)) 0 0;
+}
+.job-header-buttons {
+  flex: 9em 0 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.25em;
+  position: relative;
+  right: -1em;
+  font-size: var(--wp--preset--font-size--tiny);
+}
